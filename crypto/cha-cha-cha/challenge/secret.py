@@ -1,0 +1,1 @@
+FLAG = "nite{p@dd1nG...umm..n0..p@rT1tI0niNg_oR4cL3s_ftw}"
