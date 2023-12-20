@@ -1,0 +1,10 @@
+[x] Starting local process './arms-race'
+[+] Starting local process './arms-race': pid 13702
+b" (You can't escape this one uwu): \n"
+b" (You can't escape this one uwu): \n"
+b" (You can't escape this one uwu): \n"
+b" (You can't escape this one uwu): \n"
+b" (You can't escape this one uwu): \n"
+b" (You can't escape this one uwu): \n"
+b'stack overflow achieved!\n'
+[*] Process './arms-race' stopped with exit code 69 (pid 13702)
