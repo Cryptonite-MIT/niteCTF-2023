@@ -6,6 +6,6 @@ You have intercepted a message from an encrypted communication channel, but it a
 
 ## Flag
 
-`nite{d0*Y0u_th1nK_R54_15_G00d*&\_53CuR3!}`
+`nite{d0_Y0u_th1nK_R54_15_G00d_&_53CuR3!}`
 
 Challenge author: D
