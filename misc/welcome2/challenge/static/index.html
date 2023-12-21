@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="{{ title }}" />
+        <meta
+            name="description"
+            content="Presenting NiteCTF: An exhilarating cybersec🧑‍💻 adventure by Team Cryptonite✨ from MIT, Manipal"
+        />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{ title }}" />
+        <meta
+            property="og:description"
+            content="Presenting NiteCTF: An exhilarating cybersec🧑‍💻 adventure by Team Cryptonite✨ from MIT, Manipal"
+        />
+        <meta property="og:image" content="./assets/favicon.jpg" />
+        <link rel="icon" href="./assets/favicon.jpg" />
+
+        <title>{{ title }}</title>
+        <style>
+            body {
+                font-family: Arial;
+                background-color: #f2f2f2;
+                text-align: center;
+                margin: 1rem;
+                padding: 0;
+            }
+
+            h1,
+            h2 {
+                color: #00a36c;
+            }
+
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #0aa53e;
+                color: white;
+                margin: 20px;
+                border-radius: 5px;
+            }
+
+            a:hover {
+                background-color: #0050a0;
+            }
+
+            h2 {
+                color: #0070e0;
+            }
+
+            img {
+                margin: 1rem;
+                border: 2px solid #50c878;
+                border-radius: 5px;
+                max-width: min(90%, 450px);
+            }
+
+            .logo {
+                max-width: min(90%, 250px);
+                margin-top: 2rem;
+            }
+
+            hr {
+                color: #50c878;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./assets/favicon.jpg" class="logo" />
+        <h1>Come one come all! niteCTF 2023 has begun!</h1>
+        <h2>
+            Web, Game, Cryptography, Pwn, and more! We have challenges from all
+            them categories!
+        </h2>
+        <a href="{{ url_header }}" target="_blank">Click here to join the fun</a
+        ><br />
+        <hr />
+        <h1>Who We Are</h1>
+        <p>
+            Cryptonite is the official ethical hacking student project of
+            Manipal Institute of Technology, located in Manipal, India.
+        </p>
+        <p>This is our annual Capture the Flag event.</p>
+        <img src="./assets/sp.jpg" />
+        <img src="./assets/ic.jpg" /><br />
+        <a href="{{ url_footer }}" target="_blank">Check out our website</a
+        ><br />
+        <p>All the best, to you and your friends!</p>
+    </body>
+</html>
