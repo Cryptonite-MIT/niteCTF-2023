@@ -1,0 +1,152 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "hash": "$2b$10$WW5QrH.ortE9dWjCUWahkeduhEZDiSjzSkgXZ8jdmx1THAc67iXw.",
+            "books": [
+                {
+                    "author": "Misha Glenny",
+                    "country": "Russia",
+                    "imageLink": "",
+                    "language": "Russian",
+                    "link": "https://guardianbookshop.com/darkmarket-9780099546559",
+                    "pages": 92,
+                    "title": "DarkMarket",
+                    "year": 1886,
+                    "liteId": "CBdHTSlbxD"
+                },
+                {
+                    "author": "Dan Brown",
+                    "country": "United States",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://guardianbookshop.com/digital-fortress-9780552159739",
+                    "pages": 224,
+                    "title": "Digital Fortress",
+                    "year": 1884,
+                    "liteId": "xC6YiqauvO"
+                },
+                {
+                    "author": "Theresa Payton",
+                    "country": "Roman Empire",
+                    "imageLink": "",
+                    "language": "Classical Latin",
+                    "link": "https://rowman.com/ISBN/9781538133507/Manipulated-Inside-the-Cyberwar-to-Hijack-Elections-and-Distort-the-Truth",
+                    "pages": 442,
+                    "title": "Manipulated",
+                    "liteId": "Iuzh8nAjda"
+                },
+                {
+                    "author": "Kim Zetter",
+                    "country": "India",
+                    "imageLink": "",
+                    "language": "Sanskrit",
+                    "link": "https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/",
+                    "pages": 276,
+                    "title": "Countdown to Zero Day",
+                    "year": -700,
+                    "liteId": "LIkAg_n8Ga"
+                },
+                {
+                    "author": "Jeffery Deaver",
+                    "country": "United Kingdom",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://www.jefferydeaver.com/novel/the-blue-nowhere/",
+                    "pages": 216,
+                    "title": "The Blue Nowhere",
+                    "year": 1925,
+                    "liteId": "TOyyX4eN8R"
+                },
+                {
+                    "author": "Kevin Mitnick",
+                    "country": "United Kingdom",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://www.mitnicksecurity.com/the-art-of-deception",
+                    "pages": 209,
+                    "title": "The Art of Deception: Controlling the Human Element of Security",
+                    "year": 1927,
+                    "liteId": "FBbzQlNLFl"
+                },
+                {
+                    "author": "Ellery Lloyd",
+                    "country": "United Kingdom",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://guardianbookshop.com/people-like-her-9781529039405",
+                    "pages": 800,
+                    "title": "People Like Her",
+                    "year": 1871,
+                    "liteId": "TOE3X4eNeR"
+                },
+                {
+                    "author": "Charles Arthur",
+                    "country": "United States",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://www.amazon.com/Cyber-Wars-Hacks-Shocked-Business/dp/0749482001",
+                    "pages": 581,
+                    "title": "Cyber Wars: Hacks that Shocked the Business Worl",
+                    "year": 1952,
+                    "liteId": "dk92X4eNdR"
+                },
+                {
+                    "author": "Michael Sikorski and Andrew Honig",
+                    "country": "Greece",
+                    "imageLink": "",
+                    "language": "Greek",
+                    "link": "https://www.amazon.com/Practical-Malware-Analysis-Hands-Dissecting/dp/1593272901",
+                    "pages": 104,
+                    "title": "Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software",
+                    "year": -431,
+                    "liteId": "kd73hf-sh3"
+                },
+                {
+                    "author": "Cliff Stoll ",
+                    "country": "United States",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://www.amazon.com/Cuckoos-Egg-Tracking-Computer-Espionage/dp/1416507787",
+                    "pages": 313,
+                    "title": "The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage",
+                    "year": 1936,
+                    "liteId": "ncjsi394u9"
+                },
+                {
+                    "author": "Maddd Max",
+                    "country": "United States",
+                    "imageLink": "",
+                    "language": "English",
+                    "link": "https://example.com?flag=nite{4145_j50np_th3_4g3_01d_cur53_t82q2z0}",
+                    "pages": 326,
+                    "title": "The Sound Of The Flag Whirling",
+                    "year": 1929,
+                    "liteId": "2hdke-6sh3"
+                },
+                {
+                    "author": "Adam Shostack",
+                    "country": "France",
+                    "imageLink": "",
+                    "language": "French",
+                    "link": "https://www.amazon.com/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998",
+                    "pages": 528,
+                    "title": "Threat Modeling: Designing for Security",
+                    "year": 1857,
+                    "liteId": "lDJowo7HDw"
+                },
+                {
+                    "author": "Joseph Menn",
+                    "country": "France",
+                    "imageLink": "",
+                    "language": "French",
+                    "link": "https://www.amazon.com/Cult-Dead-Cow-Original-Supergroup/dp/1541762363",
+                    "pages": 606,
+                    "title": "Cult of the Dead Cow",
+                    "year": 1869,
+                    "liteId": "P83je9f3Ej"
+                }
+            ]
+        }
+    ]
+}

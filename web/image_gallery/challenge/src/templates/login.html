@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: dimgray;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        input {
+            width: 80%;
+            padding: 7px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: mediumspringgreen;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: mediumseagreen;
+            color:white;
+        }
+
+        p.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <div style="text-align:center"><p style="color: mediumseagreen; font-family: monospace,monospace; font-size: large;">niteCTF - 2023</p></div>
+</body>
+</html>

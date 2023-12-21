@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="{{ CSP_CONTENT | safe }}"
+        />
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <title>ERaaS</title>
+    </head>
+    <body>
+        <a class="header" href="/"><h1>Epoch Reverter as a Service</h1></a>
+        <form action="/" method="POST">
+            <input
+                name="user_input"
+                type="text"
+                placeholder="Enter epoch"
+                value="{{ value }}"
+                required
+            /><br /><br />
+            <input type="submit" value="submit" />
+        </form>
+        <br />
+        <code> {{ answer }} </code>
+        <br /><br />
+    </body>
+</html>

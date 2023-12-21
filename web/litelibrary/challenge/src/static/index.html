@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LiteLibrary</title>
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <script src="/assets/scripts.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href=".">
+                    <div class="logo">
+                        <img
+                            class="logo-icon"
+                            src="/assets/icons/bookshelf.svg"
+                            alt="Logo"
+                        />
+                        <div class="logo-text">LiteLibrary</div>
+                    </div></a
+                >
+                <div class="form-search">
+                    <div class="form-inputs">
+                        <input
+                            type="text"
+                            id="book-search"
+                            placeholder="Search"
+                            length="100"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="form-new-book">
+                    <div class="form-inputs">
+                        <input
+                            type="text"
+                            id="book-title"
+                            placeholder="Book Title"
+                            length="100"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="book-author"
+                            placeholder="Book Author"
+                        />
+                        <div class="pages-read-and-submit">
+                            <input
+                                type="text"
+                                id="book-pageCount"
+                                placeholder="Page Count"
+                            />
+                            <div class="form-read">
+                                <img
+                                    class="icon unread selected"
+                                    src="/assets/icons/eye-off-outline.svg"
+                                    alt="unread"
+                                />
+                                |
+                                <img
+                                    class="icon read"
+                                    src="/assets/icons/eye-check-outline.svg"
+                                    alt="read"
+                                />
+                            </div>
+                            <div id="submit" class="btn">Add Book</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-inner">
+                    <div id="template-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-title">Book Title</div>
+                            <div class="card-text">Book Author</div>
+                            <div class="card-text">Page Count</div>
+                        </div>
+                        <div class="book-image-wrapper">
+                            <img
+                                src="/assets/icons/bookshelf.svg"
+                                loading="lazy"
+                                alt="Cover image alt"
+                                class="book-image"
+                            />
+                        </div>
+                        <div class="card-buttons">
+                            <div data-options="not-fav|fav">
+                                <img
+                                    class="not-fav"
+                                    src="/assets/icons/star-outline.svg"
+                                    alt="mark as not favourite"
+                                /><img
+                                    class="fav"
+                                    src="/assets/icons/star.png"
+                                    alt="mark as favourite"
+                                />
+                            </div>
+                            <div data-options="unread|read">
+                                <img
+                                    class="unread"
+                                    src="/assets/icons/eye-off-outline.svg"
+                                    alt="mark as unread"
+                                /><img
+                                    class="read"
+                                    src="/assets/icons/eye-check-outline.svg"
+                                    alt="mark as read"
+                                />
+                            </div>
+                            <img
+                                class="delete"
+                                src="/assets/icons/delete.svg"
+                                alt="delete"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <marquee scrolldelay="1"> </marquee>
+            <!-- <p>
+                Books data credit:
+                <a
+                    href="https://github.com/benoitvallon/100-best-books/blob/master/books.json"
+                    target="_blank"
+                    >https://github.com/benoitvallon/100-best-books/blob/master/books.json</a
+                >
+            </p> -->
+            <hr />
+            <div class="footer">
+                <div id="stats"></div>
+                <div class="resetBtn">Reset Library To Default</div>
+            </div>
+        </div>
+    </body>
+</html>

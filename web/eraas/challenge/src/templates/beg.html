@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="{{ CSP_CONTENT | safe }}"
+        />
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <title>ERaaS</title>
+    </head>
+    <body>
+        <a class="header" href="/"><h1>Epoch Reverter as a Service</h1></a>
+        <b>Fill this form to place your request</b><br /><br />
+
+        <form action="/begg" method="POST">
+            <input
+                name="email"
+                type="email"
+                placeholder="Enter email e.g. mom.doe@yahoo.com"
+                value="{{ email_value }}"
+                required
+            /><br /><br />
+            <textarea
+                name="reason"
+                rows="10"
+                cols="30"
+                placeholder="Reason for requesting, the more detailed the better"
+                required
+            >
+{{ reason_value }}</textarea
+            ><br /><br />
+            <input
+                name="user_input"
+                type="text"
+                placeholder="Enter epoch"
+                value="{{ epoch }}"
+                required
+            /><br /><br />
+            <input type="submit" value="submit" />
+        </form>
+        <br />
+        <code>{{ answer }}</code><br />
+        {% if trackingUrl %}
+        <code>
+            Here's your
+            <a href="/status/{{ trackingUrl }}">request tracking url</a>. Keep
+            it to yourself as it contains personal details like your email id.
+        </code>
+        {% endif %}
+        <br /><br />
+    </body>
+</html>

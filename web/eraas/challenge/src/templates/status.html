@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="{{ CSP_CONTENT | safe }}"
+        />
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <title>ERaaS</title>
+        <script src="/assets/status.js"></script>
+    </head>
+    <body>
+        <a class="header" href="/"><h1>Epoch Reverter as a Service</h1></a>
+        {% if epoch %}
+        <code>Status: {{ status }}</code><br />
+        <code>Epoch: {{ epoch }}</code><br />
+        <code>Email: {{ email | safe }}</code><br />
+        <code>Reason: {{ reason }}</code><br /><br />
+        <button id="nudge" value="nudge">Nudge</button><br />
+        <code id="nudgeResponse"></code><br /><br />
+        <form action="." id="adminResponse" method="post">
+            Enter your comments [For admin use only]
+            <br /><br />
+            <textarea name="comments" {% if not flag %} disabled {% endif %}>
+{{ flag }}</textarea
+            >
+            <br /><br />
+            <input
+                type="submit"
+                value="Submit comment"
+                {%
+                if
+                not
+                flag
+                %}
+                disabled
+                {%
+                endif
+                %}\
+            />
+        </form>
+        {% else %}
+        <code>Invalid request id.</code><br />
+        {% endif %}
+    </body>
+</html>

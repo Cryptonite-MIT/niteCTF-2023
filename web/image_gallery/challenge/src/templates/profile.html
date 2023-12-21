@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged in!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            background-color: mediumspringgreen;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: mediumseagreen;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Profile</h1><br><br>
+    <p style="color: mediumseagreen; font-family: monospace,monospace; font-size: large; word-wrap: break-word;margin:10px">Welcome, {{username}}! You have successfully logged in. Your secret is:- <br> {{secret}}!</p><br>
+    <p style="color: white;">Images stored:-<br></p>
+    <div id="user" style="display: flex;justify-content: center;">
+    <img style="margin-right:10px" src="https://avatars.githubusercontent.com/u/67434608?s=280&v=4"/><br>
+    </div><br>
+    <form action="/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+<script>
+    const k = "{{ key }}";
+    if (k === "1")
+    {
+        const i = document.createElement('img');
+        i.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG5489lww8JwVMQWyHkJvXsouBexpwfW7E4yCdjCg_nCcDWRy5F9fMDtAbDe9Yo2Hx7c&usqp=CAU';
+        document.getElementById('user').appendChild(i);
+    }
+</script>
+</html>

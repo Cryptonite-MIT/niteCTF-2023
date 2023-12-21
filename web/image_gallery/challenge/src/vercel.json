@@ -1,0 +1,5 @@
+{
+    "devCommand": "gunicorn main:app -b 0.0.0.0:8000",
+    "builds": [{ "src": "main.py", "use": "@vercel/python" }],
+    "routes": [{ "src": "/(.*)", "dest": "main.py" }]
+}

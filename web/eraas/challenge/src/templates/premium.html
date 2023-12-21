@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="{{ CSP_CONTENT | safe }}"
+        />
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <title>ERaaS</title>
+    </head>
+    <body>
+        <a class="header" href="/"><h1>Epoch Reverter as a Service</h1></a>
+        <p>Premium service will be unveiled shortly. Stay tuned!</p>
+        <p>
+            Meanwhile you can leave your email so that we can let you know when
+            we are live.
+        </p>
+        <form action="/premiumm" method="POST">
+            <input
+                name="email"
+                type="email"
+                placeholder="Enter email e.g. mom.doe@yahoo.com"
+                required
+            /><br /><br />
+            <input type="submit" value="submit" />
+        </form>
+        <p>{{ msg }}</p>
+        <!--<p>
+            Also, if you are really in a hurry, like clock's ticking need to
+            diffuse bomb kind of hurry, you may <a href="beg">request</a> the
+            admin.
+        </p>-->
+        <!-- john let this be for now. too much traffic phew -->
+    </body>
+</html>

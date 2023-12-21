@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Album</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: mediumseagreen;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+
+      p {
+        font-family: monospace, monospace;
+        font-size: large;
+        text-align: center;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      button {
+        background-color: mediumspringgreen;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 8px;
+      }
+
+      #top-right-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      #album-container {
+        flex: 1;
+        width: 80%;
+        max-width: 95%;
+        margin: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        background-color: #222;
+        position: relative;
+      }
+
+      #image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        pointer-events: none;
+      }
+
+      .raindrop {
+        position: absolute;
+        animation: ripple 2s ease-in-out, fadeInOut 2.5s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      @keyframes ripple {
+        0% {
+          transform: scale(0);
+        }
+
+        50% {
+          transform: scale(1.5);
+        }
+
+        100% {
+          transform: scale(2);
+        }
+      }
+
+      @keyframes fadeInOut {
+        0%,
+        25%,
+        75%,
+        100% {
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My Album</h1>
+    <div id="album-container">
+      <div id="image-container"></div>
+    </div>
+    <p style="color: white">
+      Embark on a visual journey through the album of your life. Using our
+      secure image gallery, view your cherished images, preserving the stories,
+      smiles, and moments that define your unique narrative.
+    </p>
+    <p style="color: mediumseagreen">Login to view your images.</p>
+    <form action="/login" method="get">
+      <button type="submit" id="top-right-button">Login</button>
+    </form>
+
+    <script>
+        let isTabActive = true;
+        const maxRaindrops = 500;
+      
+        function getRandomImageUrl()
+        {
+          const baseUrl = "https://picsum.photos/";
+          const height = Math.floor(Math.random() * 100) + 50;
+          const width = Math.floor(Math.random() * 100) + 50;
+          return `${baseUrl}${height}/${width}`;
+        }
+      
+        function createRaindrop()
+        {
+          if (isTabActive)
+          {
+            const raindrop = document.createElement("img");
+            raindrop.src = getRandomImageUrl();
+            raindrop.classList.add("raindrop");
+      
+            const maxContainerWidth = window.innerWidth - 400;
+            const maxContainerHeight = window.innerHeight - 400;
+      
+            const x = Math.random() * maxContainerWidth;
+            const y = Math.random() * maxContainerHeight;
+      
+            raindrop.style.left = `${x}px`;
+            raindrop.style.top = `${y}px`;
+      
+            document.getElementById("image-container").appendChild(raindrop);
+      
+            setTimeout(() => {
+              raindrop.style.opacity = 0;
+              raindrop.addEventListener("transitionend", () => {
+                raindrop.remove();
+              });
+            }, 1000);
+          }
+        }
+      
+        function generateRaindrops()
+        {
+          function loop() {
+            createRaindrop();
+            requestAnimationFrame(loop);
+          }
+          loop();
+        }
+      
+        document.addEventListener("visibilitychange", () => {
+          isTabActive = document.visibilityState === "visible";
+        });
+      
+        window.addEventListener("load", () => {
+          generateRaindrops();
+        });
+      </script>
+  </body>
+</html>

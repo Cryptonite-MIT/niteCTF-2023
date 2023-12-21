@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LiteLibrary</title>
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <script src="/assets/scripts.js" defer></script>
+        <style>
+            .content,
+            .content-inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card {
+                height: 100%;
+                max-width: 500px;
+            }
+
+            .card-inner {
+                margin: 1rem;
+            }
+
+            .card-buttons {
+                margin-left: 0.5rem;
+            }
+
+            .book-image-wrapper {
+                justify-content: left;
+                margin-right: 1rem;
+                overflow: visible;
+            }
+
+            .book-image {
+                max-height: 40vh;
+            }
+
+            @media (max-width: 768px) {
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-inner {
+                    margin: 0;
+                }
+
+                .card-buttons {
+                    margin-left: 0;
+                    margin-top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="/">
+                    <div class="logo">
+                        <img
+                            class="logo-icon"
+                            src="/assets/icons/bookshelf.svg"
+                            alt="Logo"
+                        />
+                        <div class="logo-text">LiteLibrary</div>
+                    </div></a
+                >
+            </div>
+
+            <div class="content">
+                <div class="content-inner">
+                    <div id="template-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-title">Book Title</div>
+                            <div class="card-text">Book Author</div>
+                            <div class="card-text">Page Count</div>
+                        </div>
+                        <div class="book-image-wrapper">
+                            <img
+                                src="/assets/icons/bookshelf.svg"
+                                loading="lazy"
+                                alt="Cover image alt"
+                                class="book-image"
+                            />
+                        </div>
+                        <div class="card-buttons">
+                            <div data-options="not-fav|fav">
+                                <img
+                                    class="not-fav"
+                                    src="/assets/icons/star-outline.svg"
+                                    alt="mark as not favourite"
+                                /><img
+                                    class="fav"
+                                    src="/assets/icons/star.png"
+                                    alt="mark as favourite"
+                                />
+                            </div>
+                            <div data-options="unread|read">
+                                <img
+                                    class="unread"
+                                    src="/assets/icons/eye-off-outline.svg"
+                                    alt="mark as unread"
+                                /><img
+                                    class="read"
+                                    src="/assets/icons/eye-check-outline.svg"
+                                    alt="mark as read"
+                                />
+                            </div>
+                            <img
+                                class="delete"
+                                src="/assets/icons/delete.svg"
+                                alt="delete"
+                            />
+                            <img
+                                class="report"
+                                src="/assets/icons/shield-alert-outline.svg"
+                                alt="report"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <marquee scrolldelay="1" style="display: none"> </marquee> -->
+            <!-- <p>
+                Books data credit:
+                <a
+                    href="https://github.com/benoitvallon/100-best-books/blob/master/books.json"
+                    target="_blank"
+                    >https://github.com/benoitvallon/100-best-books/blob/master/books.json</a
+                >
+            </p> -->
+            <!-- <hr /> -->
+
+            <div class="footer">
+                <div id="stats"></div>
+                <div id="logoutBtn" class="footerBtn"></div>
+            </div>
+        </div>
+    </body>
+</html>

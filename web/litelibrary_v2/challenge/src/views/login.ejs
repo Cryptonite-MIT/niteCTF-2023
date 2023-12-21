@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - LiteLibrary</title>
+        <link rel="stylesheet" href="/assets/stylesAuth.css" />
+        <script src="/assets/scriptsAuth.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href=".">
+                    <div class="logo">
+                        <img
+                            class="logo-icon"
+                            src="/assets/icons/bookshelf.svg"
+                            alt="Logo"
+                        />
+                        <div class="logo-text">LiteLibrary</div>
+                    </div></a
+                >
+            </div>
+
+            <div class="content">
+                <div class="content-inner">
+                    <form method="post">
+                        <div class="form">
+                            <input
+                                type="text"
+                                name="username"
+                                placeholder="Username"
+                                maxlength="20"
+                                required
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                maxlength="256"
+                                placeholder="Password"
+                                required
+                            />
+                            <input type="submit" hidden />
+                            <div id="submit" class="btn">Login</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <div id="forgotPassword" class="footerBtn">Forgot Password</div>
+                <a href="register"
+                    ><div class="footerBtn">
+                        Don't have an account? Register
+                    </div></a
+                >
+            </div>
+        </div>
+    </body>
+</html>
