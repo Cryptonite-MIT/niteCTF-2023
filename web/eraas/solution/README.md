@@ -1,6 +1,6 @@
 # eraas Solution
 
-This challenge was broken. I came to know of it only after the CTF ended, while going through others writeups.
+This challenge was broken. I came to know of it only after the CTF ended, while going through writeups.
 
 At line 22 in "main.py", I forgot to include a trailing `$` in the validation regex that was supposed to ensure that the user input was numeric:
 
